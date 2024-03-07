@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="reset.css/reset.css">
+    <link rel="stylesheet" href="style.css" >
+    <title>Mistery</title>
+</head>
+
+<body>
+   
+    <div class="container">
+
+        <div class="encabezado">
+            <h1>Encriptador</h1>
+        </div>
+                
+        <div class="contenedor">
+            <section class="sections" >
+                <textarea id="texto-encriptado" class="campo-texto" placeholder="Texto a encriptar"></textarea>
+            </section>
+            <section id="section-mensaje" class="campo-mensaje">
+                <textarea id="campo-mensaje" class="mensaje" readonly placeholder="Esperando..."></textarea>
+            </section>
+        </div>
+
+        <div class=btns>
+            <button class="btnEncriptar" id="btnEncriptar" onclick="btnEncriptar()">Encriptar</button>
+            <button class="btnDesencriptar" onclick="btnDesencriptar()">Desencriptar</button>
+            <button class="btncopy" id="btncopiar" onclick="copiarAlPortapapeles()">Copiar</button>
+            <button class="btnpegar" id="btnpegar" onclick="pegar()">Pegar</button>
+        </div>
+
+        <footer  class="piepagina">
+            <a class="git" href="https://github.com/F4nnes" target="_blank" rel="noopener noreferrer">
+                <ion-icon name="logo-github"></ion-icon>
+                <sapan>Github</sapan>
+            </a>
+
+            <a class="linke" href="https://www.linkedin.com/in/eli-tonatiúh-flores-jasso-a9956b2b0/" target="_blank" rel="noopener noreferrer">
+                <ion-icon name="logo-linkedin"></ion-icon>
+                <sapan>Linkedin</sapan>
+            </a>
+        </footer>
+
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    </div>
+    
+    <script src="Mistery.js" ></script>
+</body>
+</html>
